@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- 
+Author: Robert Zaranek - Sept 30, 2020 
+The main webpage for the Fortune Cookie Customizer. User specs are input here.
+-->
+
+<html lang="en">
+
+<head>
+    <title>Fortune Cookie Customizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fortunestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+
+        <form action="fortune.php" method="get">
+
+        <fieldset>
+            <legend>Your Name</legend>
+            <input type="text" name="name" placeholder="Your Name" maxlength="50" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fortune Cookie Customizer</legend>
+
+            <span class="input_desc">Quantity [1-50]:</span>
+            <input type="number" name="quantity" min="1" max="50" required><br>
+
+            <span class="input_desc">Colour:</span>
+            <input type="color" name="color"><br>
+
+            <span class="input_desc">Lucky Number Range [1-100]:</span>
+            <input type="number" name="min" min="1" max="100" placeholder="Min" required>
+            <input type="number" name="max" min="1" max="100" placeholder="Max" required><br>
+
+            <input type="submit" value="Get Your Fortune(s)!">
+        </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>
